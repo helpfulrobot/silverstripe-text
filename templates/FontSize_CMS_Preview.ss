@@ -1,0 +1,1 @@
+<div class="fontsize-cms-preview" style="font-size: $Value;">The quick brown fox jumps over the lazy dog</div>
