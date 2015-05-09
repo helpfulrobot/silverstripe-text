@@ -1,13 +1,14 @@
 {
     "name": "stephenjcorwin/silverstripe-text",
-    "description": "SilverStripe module which provides [Font] and [FontSize] DataObjects and a Settings->Appearance->Text menu for managing your website's Fonts and FontSizes.",
+    "description": "SilverStripe module which provides `Font` and `FontSize` DataObjects and a `Settings->Appearance->Text` Menu for managing your website's Fonts and FontSizes.",
+    "type": "silverstripe-module",
+    "homepage": "https://github.com/stephenjcorwin/silverstripe-text/",
     "keywords": [
         "silverstripe",
         "font",
         "font size",
         "text"
     ],
-    "type": "silverstripe-module",
     "license": "BSD-3-Clause",
     "authors": [
         {
@@ -16,9 +17,11 @@
             "homepage": "http://stephenjcorwin.com"
         }
     ],
-    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://github.com/stephenjcorwin/silverstripe-text/issues"
+    },
     "require": {
-        "php": ">=5.3.0",
-        "silverstripe/cms": ">=3.1.0"
+        "silverstripe/cms": "~3.1",
+        "silverstripe/framework": "~3.1"
     }
 }
