@@ -33,7 +33,7 @@ Installation can be done either by composer or by manually downloading a release
 
 ####Configuration:
 -   After installation, make sure you rebuild your database through `dev/build`
--	You should see the a new Menu in the CMS for managing `Fonts` and `FontSizes`available through the Menu `Settings->Appearance->Text`
+-	You should see the a new Menu in the CMS for managing `Fonts` and `FontSizes` available through the Menu `Settings->Appearance->Text`
 
 Uninstall
 ---------------------------------------
@@ -146,8 +146,8 @@ Code Examples
 	</head>
 		<body
 			class="
-				<% if $MyFont %>$MyFont.CSSClass %>
-				<% if $MyFontSize %>$MyFontSize.CSSClass %>
+				<% if $MyFont %>$MyFont.CSSClass<% end_if %>
+				<% if $MyFontSize %>$MyFontSize.CSSClass<% end_if %>
 			"
 		>
 			$Layout
