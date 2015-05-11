@@ -4,17 +4,17 @@ class Font extends DataObject {
     FIELDS
   **/
 
-  static $db = array (
+  private static $db = array (
     'Name' => 'Text',
     'Value' => 'Text'
   );
 
-  static $defaults = array (
+  private static $defaults = array (
   );
 
-  public static $default_sort='Name ASC';
+  private static $default_sort='Name ASC';
 
-  static $default_records = array (
+  private static $default_records = array (
     /*array (
       'Key' => 'Value',
       'Key' => 'Value',
@@ -53,7 +53,7 @@ class Font extends DataObject {
     return true;
   }
 
-  static $summary_fields = array (
+  private static $summary_fields = array (
     'Name' => 'Name',
     'Value' => 'Value',
     'CMSPreview' => 'Preview'

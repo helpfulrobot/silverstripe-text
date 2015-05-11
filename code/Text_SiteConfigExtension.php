@@ -1,18 +1,6 @@
 <?php
 class Text_SiteConfigExtension extends DataExtension {
   /**
-    FIELDS
-  **/
-
-  static $db = array (
-  );
-
-  public static $default_sort='';
-
-  static $summary_fields = array (
-  );
-
-  /**
     CMS FIELDS
   **/
 
@@ -35,6 +23,6 @@ class Text_SiteConfigExtension extends DataExtension {
     $conf->removeComponentsByType('GridFieldPageCount');
     $data = DataObject::get('FontSize');
     $field = new GridField('FontSize', 'Font Sizes', $data, $conf);
-    $fields->addFieldToTab($tab, $field);    
+    $fields->addFieldToTab($tab, $field);
   }
 }

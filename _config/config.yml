@@ -1,0 +1,10 @@
+---
+Name: silverstripe-text
+---
+SiteConfig:
+  extensions:
+    - Text_SiteConfigExtension
+
+LeftAndMain:
+  extra_requirements_css:
+    - silverstripe-text/css/cms/min.css

@@ -156,6 +156,6 @@ Code Examples
 
 ####`themes/themes/mytheme/templates/Includes/Style.ss`
     <style>
-		<% include Font_Style Data=$Fonts %>
-		<% include FontSize_Style Data=$FontSizes %>
+		<% with $Fonts %><% include Font_Style %><% end_with %>
+		<% with $FontSizes %><% include FontSize_Style %><% end_with %>
 	</style>
