@@ -14,9 +14,15 @@ Requirements
 -   SilverStripe 3.1
 -   [stephenjcorwin/silverstripe-style-sheet](https://github.com/stephenjcorwin/silverstripe-style-sheet)
 
+Related
+---------------------------------------
+-   [stephenjcorwin/silverstripe-colors](https://github.com/stephenjcorwin/silverstripe-colors/)
+-   [stephenjcorwin/silverstripe-icons](https://github.com/stephenjcorwin/silverstripe-icons/)
+-   [stephenjcorwin/silverstripe-opacities](https://github.com/stephenjcorwin/silverstripe-opacities/)
+
 Features
 ---------------------------------------
--   Create and maintain sitewide Fonts and FontSizes
+-   Create and maintain sitewide `Fonts` and `FontSizes`
 -   Generate and reference database driven CSS classes
 
 Installation
@@ -29,7 +35,7 @@ Installation can be done either by composer or by manually downloading a release
 ####Manually:
 1.   Download the module from [the releases page](https://github.com/stephenjcorwin/silverstripe-text/releases)
 2.   Extract the file
-3.   Make sure the folder after being extracted is name 'silverstripe-text'
+3.   Make sure the folder after being extracted is name `silverstripe-text`
 4.   Place this directory in your site's root directory
 
 ####Configuration:
