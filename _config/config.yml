@@ -3,7 +3,8 @@ Name: silverstripe-text
 ---
 SiteConfig:
   extensions:
-    - Text_SiteConfigExtension
+    - Font_SiteConfigExtension
+    - FontSize_SiteConfigExtension
 
 LeftAndMain:
   extra_requirements_css:

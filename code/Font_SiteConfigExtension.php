@@ -1,5 +1,5 @@
 <?php
-class Text_SiteConfigExtension extends DataExtension {
+class Font_SiteConfigExtension extends DataExtension {
   /**
    * CMS FIELDS
    */
