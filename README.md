@@ -12,6 +12,7 @@ Maintainer Contact
 Requirements
 ---------------------------------------
 -   SilverStripe 3.1
+-   [stephenjcorwin/silverstripe-style-sheet](https://github.com/stephenjcorwin/silverstripe-style-sheet)
 
 Features
 ---------------------------------------
@@ -33,7 +34,7 @@ Installation can be done either by composer or by manually downloading a release
 
 ####Configuration:
 -   After installation, make sure you rebuild your database through `dev/build`
--	You should see the a new Menu in the CMS for managing `Fonts` and `FontSizes` available through the Menu `Settings->Appearance->Text`
+-	You should see the a new Menu in the CMS for managing `Fonts` and `FontSizes` available through the `Settings->Appearance->Text` Menu
 
 Uninstall
 ---------------------------------------
@@ -53,7 +54,7 @@ Code Examples
 ####`mysite/code/MyDataObject.php`
     <?php
     class MyDataObject extends DataObject {
-        static $has_one = array (
+        private static $has_one = array (
             'MyFont' => 'Font',
             'MyFontSize' => 'FontSize'
         );
@@ -126,24 +127,11 @@ Code Examples
     	public function init() {
 			parent::init();
 		}
-
-    	public function getFonts() {
-			$data = DataObject::get('Font');
-			return $data;
-		}
-
-		public function getFontSizes() {
-			$data = DataObject::get('FontSize');
-			return $data;
-		}
     }
 
-####`themes/themes/mytheme/templates/Page.ss`
+####`themes/mytheme/templates/Page.ss`
     <!DOCTYPE html>
-	<html lang="$ContentLocale">
-	<head>
-		<% include Style %>
-	</head>
+	<html>
 		<body
 			class="
 				<% if $MyFont %>$MyFont.CSSClass<% end_if %>
@@ -153,9 +141,3 @@ Code Examples
 			$Layout
 		</body>
 	</html>
-
-####`themes/themes/mytheme/templates/Includes/Style.ss`
-    <style>
-		<% with $Fonts %><% include Font_Style %><% end_with %>
-		<% with $FontSizes %><% include FontSize_Style %><% end_with %>
-	</style>
